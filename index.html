@@ -9,15 +9,14 @@
   </head>
   <body>
       <div id="particles-container"></div>
+      <div id="cadastrocm"></div>
 
 
 
 <! – Coleta de informações para carteirinha! –>
 
-<form method="POST" action="criar/carteira.html" enctype="multipart/form-data" class="criadorcarteirinha">
-
-<h1>Criador de Carteirinha:</h1>
-
+<form id='form' method="POST" action="criar/carteira.html" enctype="multipart/form-data" class="criadorcarteirinha">
+    <h1>Carteirinha</h1>
 
 <label>
     <p>Nome Completo: </p>
@@ -27,37 +26,35 @@
 
 <label>
     <p>CPF: </p>
-    <input id="cpfinput" class="forcarteirinha" type="text" name="CPF" pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})" title="Coloque seu CPF corretamente!" required placeholder="CPF...">
+    <input id="cpfinput" class="forcarteirinha" type="text" name="CPF" pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})" required placeholder="CPF...">
 </label>
 
 <label>
     <p>Data Batismo: </p>
-    <input class="forcarteirinha" type="date" alt="Data Batismo" name="dbatismo">
+    <input id='databatismo' class="forcarteirinha" type="date" alt="Data Batismo" name="dbatismo">
 </label>
 
 <label>
     <p>Nome da Mãe: </p>
-    <input class="forcarteirinha" type="text" alt="Data Batismo" name="nmae" placeholder="Nome da sua mãe...">
+    <input id='nomedamae' class="forcarteirinha" type="text" alt="Data Batismo" name="nmae" placeholder="Nome da sua mãe...">
 </label>
 
 <label>
     <p>Nome do Pai: </p>
-    <input class="forcarteirinha" type="text" alt="Nome do Pai" name="Nome" placeholder="Nome do seu Pai...">
+    <input id='nomedopai' class="forcarteirinha" type="text" alt="Nome do Pai" name="Nome" placeholder="Nome do seu Pai...">
 </label>
 
 <label>
     <p>Foto 3x4: </p>
-    <input type="file" name="Foto" required accept="image/*">
+    <input id='foto34' type="file" name="Foto" required accept="image/*">
 </label>
 
 <p>
 <input type="submit" value="Fazer" id="benviar">
 </p>
 
-
-
-
 </form>
+
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="script.js"></script>

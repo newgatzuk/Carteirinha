@@ -42,7 +42,6 @@ form{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
     border: 0px;
     border-radius: 20px;
 
@@ -50,7 +49,7 @@ form{
 
 form input[type=submit]{
 	cursor: pointer;
-	background-color: #a1a3f5;
+	background-color: #8981f7;
     width: 100%;
     height: 40px;
     text-align: center;
